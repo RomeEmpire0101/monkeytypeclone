@@ -1,10 +1,10 @@
 :root {
-  --bg: #323437;
-  --sub: #646669;
-  --text: #d1d0c5;
-  --main: #e2b714;
-  --err: #ca4f4f;
-  --err-extra: #7e2a33;
+  --bg: #0b0f1a;
+  --sub: #4a5570;
+  --text: #cfd8ea;
+  --main: #3ee0ff;
+  --err: #ff5d7a;
+  --err-extra: #7a2238;
 }
 
 * { box-sizing: border-box; }
@@ -34,7 +34,11 @@ body {
   color: var(--main);
   font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 12px rgba(62, 224, 255, 0.45);
 }
+
+.logo-dim { color: var(--sub); font-weight: 400; }
 
 .modes {
   display: flex;

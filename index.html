@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>monkeytype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="logo">monkeytype</div>
+    <nav class="modes" id="modes">
+      <button data-mode="time" data-value="15">15</button>
+      <button data-mode="time" data-value="30">30</button>
+      <button data-mode="time" data-value="60">60</button>
+      <button data-mode="time" data-value="120">120</button>
+      <span class="sep">|</span>
+      <button data-mode="words" data-value="10">10</button>
+      <button data-mode="words" data-value="25">25</button>
+      <button data-mode="words" data-value="50">50</button>
+      <button data-mode="words" data-value="100">100</button>
+      <span class="sep">|</span>
+      <button id="sfx-toggle">sound on</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="status" id="status"></div>
+
+    <section class="typing" id="typing">
+      <div class="words" id="words">
+        <div class="inner" id="inner"></div>
+      </div>
+    </section>
+
+    <section class="results hidden" id="results">
+      <div class="res-row">
+        <div class="stat"><div class="label">wpm</div><div class="value" id="r-wpm"></div></div>
+        <div class="stat"><div class="label">acc</div><div class="value" id="r-acc"></div></div>
+        <div class="stat"><div class="label">raw</div><div class="value sm" id="r-raw"></div></div>
+        <div class="stat"><div class="label">characters</div><div class="value sm" id="r-chars"></div></div>
+      </div>
+      <div class="res-meta" id="r-meta"></div>
+      <button class="btn" id="r-restart">restart</button>
+    </section>
+  </main>
+
+  <footer class="hint">tab or esc: restart &nbsp;·&nbsp; ctrl+backspace: clear word</footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
